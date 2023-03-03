@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Rating component</title>
+</head>
+<body>
+    <main>
+        <!-- rating state -->
+        <div class="screen__rating">
+            <img class="icon" src="images/icon-star.svg" alt="">
+            <h1 class="heading">How did we do?</h1>
+            <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+            <ul class="rating">
+                <li><button class="rate-btn" name="rate" id= "rate" value="1">1</button></li>
+                <li><button class="rate-btn" name="rate" id= "rate" value="2">2</button></li>
+                <li><button class="rate-btn" name="rate" id= "rate" value="3">3</button></li>
+                <li><button class="rate-btn" name="rate" id= "rate" value="4">4</button></li>
+                <li><button class="rate-btn" name="rate" id= "rate" value="5">5</button></li>
+            </ul>
+            <button class="submit" id="submit" type="submit">Submit</button>
+        </div>
+        <!-- rating state end -->
+    
+        <!-- thank you state -->
+        <div class="screen__thank-you hidden">
+            <img class="img__thank-you" src="images/illustration-thank-you.svg" alt="">
+            <p class="user-rate">You selected <span class="user-rating">5</span> out of 5</p>
+            <h2 class="heading">Thank you!</h2>
+            <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+        </div>
+    </main>
+
+</body>
+
+</html>
+<script src="script.js"></script>
